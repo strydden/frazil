@@ -1,6 +1,7 @@
-@import "abstracts/fonts";
+// @import "abstracts/fonts";
 @import "abstracts/variables";
 @import "components/button";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -36,7 +37,10 @@ select,
 option,
 ol,
 div {
-  font-family: "Neurial Grotesk";
+  font-family: "Space Grotesk", sans-serif;
+}
+p {
+  font-size: 16px;
 }
 .banner-content {
   @media screen and(max-width: 767px) {
