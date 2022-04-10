@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -86,7 +86,7 @@ select,
 option,
 ol,
 div {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
 }
 
 p {
@@ -98,6 +98,13 @@ textarea:focus {
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 @media screen and (max-width: 767px) {
