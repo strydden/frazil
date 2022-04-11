@@ -312,6 +312,13 @@ h1, h2, h3, h4, h5, h6, span, p, button, a, ul, li, input, select, option, ol, d
   }
 }
 
+@media (min-width: 768px) and (max-width: 1484px){
+  .cf-div {
+    margin: auto;
+    width: 60%;
+  }
+}
+  
 .client-featars ul {
   list-style: none;
   padding: 0;

@@ -1045,4 +1045,24 @@ header {
 .sm-footer .social-links li a:hover {
   opacity: 0.7;
 }
+.cf-div {
+  margin: auto;
+  width: 60%;
+}
+
+.cf-div p {
+    margin-top: 0.8rem;
+}
+
+@media screen and (max-width: 767px) {
+
+  .cf-div {
+    margin: auto;
+    width: 100%;
+  }
+  
+  .cf-div p {
+      margin-top: 0rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
