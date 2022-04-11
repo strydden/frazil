@@ -16,7 +16,7 @@ $('.brands-logo').owlCarousel({
             nav:false
         },
         1000:{
-            items:5,
+            items:4,
             nav:true,
             loop:false
         }
