@@ -78,6 +78,8 @@
   font-display: swap;
 }
 
+/*#28668D*/
+/*#28668D*/
 .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -85,8 +87,7 @@
 }
 
 .btn-primary {
-  background-image: -webkit-gradient(linear, left top, right top, from(#28668D), to(#3E8AB9));
-  background-image: linear-gradient(to right, #28668D, #3E8AB9);
+  background-color: #1288CA;
   border-radius: 5px;
   height: 40px;
   font-weight: 400;
@@ -141,7 +142,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #28668D;
+  color: #1288CA;
 }
 
 a:hover {
@@ -186,6 +187,16 @@ header {
   z-index: 999;
 }
 
+header .logo {
+  width: 100px;
+}
+
+header .logo svg {
+  width: 100%;
+  height: auto;
+  margin-left: -10px;
+}
+
 @media screen and (max-width: 767px) {
   .banner-content {
     text-align: center;
@@ -221,7 +232,7 @@ header {
 }
 
 .text-primary {
-  color: #28668D !important;
+  color: #1288CA !important;
 }
 
 .text-white {
@@ -233,11 +244,11 @@ header {
 }
 
 .bg-light-blue {
-  background-color: #2e4780;
+  background-color: #1288CA !important;
 }
 
 .bg-blue {
-  background-color: #1E3463 !important;
+  background-color: #1288CA !important;
 }
 
 .bg-blue-grey {
@@ -281,6 +292,31 @@ header {
   .banner-title h1 {
     font-size: 27px;
   }
+}
+
+.banner .banner-data ul {
+  list-style: none;
+  padding: 0;
+}
+
+.banner .banner-data ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-data ul li i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.banner .banner-data ul li p {
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 991px) {
@@ -419,14 +455,20 @@ header {
 .client-featars ul li {
   width: 100%;
   float: left;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .client-featars ul li .featars-icon {
   width: 50px;
   height: 50px;
-  float: left;
   border-radius: 5px;
-  background-color: #EAF9F8;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,7 +480,7 @@ header {
           justify-content: center;
   margin-right: 15px;
   font-size: 15px;
-  color: #1E3463;
+  color: #1288CA;
 }
 
 .client-featars ul li .featars-icon i {
@@ -447,7 +489,9 @@ header {
 
 .client-featars ul li p {
   color: #F9FAFB;
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  line-height: 30px;
 }
 
 .expertise-grid ul {
@@ -528,7 +572,7 @@ header {
 }
 
 .expertise-grid ul li div:hover {
-  border-color: #28668D;
+  border-color: #1288CA;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -778,7 +822,7 @@ header {
 }
 
 .choose-us-grid ul li .box-wrapper .content-wrapper span {
-  color: #28668D;
+  color: #1288CA;
   font-size: 18px;
   margin-bottom: 10px;
   float: left;
@@ -837,7 +881,7 @@ header {
   content: "";
   width: 5px;
   height: 100%;
-  background-color: #28668D;
+  background-color: #1288CA;
   float: left;
   position: absolute;
   left: 0;
@@ -925,7 +969,7 @@ header {
   background: #ffffff !important;
   -webkit-box-shadow: 0px 4px 60px rgba(41, 44, 124, 0.15);
           box-shadow: 0px 4px 60px rgba(41, 44, 124, 0.15);
-  color: #28668D !important;
+  color: #1288CA !important;
   border-radius: 50px !important;
   font-size: 18px !important;
 }
@@ -1007,7 +1051,7 @@ header {
 .how-work-grid ul li .box-wrapper .work-icon {
   width: 40px;
   height: 40px;
-  background-color: #28668D;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,12 +1066,13 @@ header {
 }
 
 .how-work-grid ul li .box-wrapper .work-icon i {
-  color: #fff;
+  color: #1288CA;
+  font-size: 20px;
 }
 
 .how-work-grid ul li .box-wrapper span {
   color: #231F20;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -1038,17 +1083,20 @@ header {
   }
 }
 
-.how-work-grid ul li .box-wrapper p {
-  font-size: 14px;
-  color: #231F20;
+.how-work-grid ul li .box-wrapper .how-we-work-text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.71;
 }
 
 .lg-footer .company-details .logo {
   width: 100px;
 }
 
-.lg-footer .company-details .logo img {
+.lg-footer .company-details .logo svg {
   width: 100%;
+  height: auto;
+  margin-left: -10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1099,10 +1147,6 @@ header {
   color: #ededed;
 }
 
-.sm-footer {
-  background-color: #2e4780;
-}
-
 .sm-footer .social-links {
   list-style: none;
   margin: 0;
@@ -1150,5 +1194,49 @@ header {
   .cf-div p {
     margin-top: 0rem;
   }
+}
+
+.our-expertise .expertise-text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.contact-us,
+.how-we-work,
+.our-expertise,
+.clients-success {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.frazil-footer {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.frazil-footer .discription,
+.frazil-footer .copyright,
+.frazil-footer .address {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.71;
 }
 /*# sourceMappingURL=style.css.map */

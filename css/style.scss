@@ -53,7 +53,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
+
+  .logo {
+    svg {
+      width: 100%;
+      height: auto;
+      margin-left: -10px;
+    }
+    width: 100px;
+  }
 }
+
 .banner-content {
   @media screen and(max-width: 767px) {
     text-align: center;
@@ -88,10 +98,10 @@ header {
   color: $secondary-color !important;
 }
 .bg-light-blue {
-    background-color: #2e4780;
+  background-color: $background-color !important;
 }
 .bg-blue {
-  background-color: $secondary-color !important;
+  background-color: $background-color !important;
 }
 .bg-blue-grey {
   background-color: $grey-color;
@@ -127,6 +137,23 @@ header {
 }
 .banner {
   .banner-data {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+        i {
+          margin-right: 15px;
+          font-size: 20px;
+        }
+        p {
+          font-size: 17px;
+          letter-spacing: 0.4px;
+          line-height: 30px;
+        }
+      }
+    }
     @media screen and(max-width: 991px) {
       .banner-img {
         img {
@@ -229,25 +256,29 @@ header {
     li {
       width: 100%;
       float: left;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
       .featars-icon {
         width: 50px;
         height: 50px;
-        float: left;
         border-radius: 5px;
-        background-color: $sky-color;
+        background-color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 15px;
         font-size: 15px;
-        color: $secondary-color;
+        color: $primary-color;
         i {
           font-size: 20px;
         }
       }
       p {
         color: $grey-color;
-        font-size: 16px;
+        font-size: 17px;
+        letter-spacing: 0.4px;
+        line-height: 30px;
       }
     }
   }
@@ -616,28 +647,30 @@ header {
         .work-icon {
           width: 40px;
           height: 40px;
-          background-color: $primary-color;
+          background-color: #fff;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: 50%;
           margin-bottom: 10px;
           i {
-            color: #fff;
+            color: $primary-color;
+            font-size: 20px;
           }
         }
         span {
           color: $dark-color;
-          font-size: 18px;
+          font-size: 22px;
           font-weight: 600;
           margin-bottom: 7px;
           @media screen and(max-width: 991px) {
             font-size: 16px;
           }
         }
-        p {
-          font-size: 14px;
-          color: $dark-color;
+        .how-we-work-text {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 1.71;
         }
       }
     }
@@ -646,10 +679,12 @@ header {
 .lg-footer {
   .company-details {
     .logo {
-      width: 100px;
-      img {
+      svg {
         width: 100%;
+        height: auto;
+        margin-left: -10px;
       }
+      width: 100px;
     }
   }
   .f-menus {
@@ -689,7 +724,6 @@ header {
   }
 }
 .sm-footer {
-  background-color: #2e4780;
   .social-links {
     list-style: none;
     margin: 0;
@@ -717,17 +751,49 @@ header {
 }
 
 .cf-div p {
-    margin-top: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 @media screen and (max-width: 767px) {
-
   .cf-div {
     margin: auto;
     width: 100%;
   }
-  
+
   .cf-div p {
-      margin-top: 0rem;
+    margin-top: 0rem;
+  }
+}
+
+.our-expertise {
+  .expertise-text {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.71;
+  }
+}
+
+.contact-us,
+.how-we-work,
+.our-expertise,
+.clients-success {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frazil-footer {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .discription,
+  .copyright,
+  .address {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.71;
   }
 }
