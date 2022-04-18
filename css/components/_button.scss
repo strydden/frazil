@@ -3,18 +3,18 @@
 .btn{
     box-shadow: none;
     border: 0;
+    cursor: pointer;
 }
 .btn-primary{
-    background-color: $primary-color;
-    border-radius: 5px;
+    background-color: $button-blue-color;
+    border-radius: 2px;
     height: 40px;
     font-weight: 400;
     font-size: 15px;
     color: #fff;
     border: none;
     background-size: 300% 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 5px 55px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;

@@ -68,9 +68,11 @@ header {
   @media screen and(max-width: 767px) {
     text-align: center;
   }
+  i {
+    color: $section-blue-bg-color;
+  }
   p {
     font-size: 15px;
-    color: $dark-color !important;
     @media screen and(max-width: 991px) {
       font-size: 14px;
       line-height: normal;
@@ -115,6 +117,16 @@ header {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
+}
+
+.footer-bg {
+  background-color: $footer-bg-color;
+}
+.footer-text {
+  color: $footer-text-color;
+}
+.footer-heading-text {
+  color: $footer-heading-text-color;
 }
 .banner-title {
   h1 {
@@ -324,7 +336,7 @@ header {
           padding: 15px;
         }
         &:hover {
-          border-color: $primary-color;
+          border-color: $section-blue-bg-color;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
         .expertise-icon {
@@ -339,8 +351,8 @@ header {
           }
         }
         span {
-          color: $dark-color;
           font-size: 18px;
+          font-weight: 500;
           @media screen and(max-width: 767px) {
             font-size: 15px;
           }
@@ -693,15 +705,11 @@ header {
       padding-bottom: 10px;
     }
     h4 {
-      color: #ededed;
       font-size: 15px;
       font-weight: 600;
       @media screen and(max-width: 767px) {
         font-size: 17px;
       }
-    }
-    p {
-      color: #ededed;
     }
     ul {
       list-style: none;
@@ -796,4 +804,20 @@ header {
     font-weight: 400;
     line-height: 1.71;
   }
+}
+
+.btn-green-color {
+  background-color: $button-green-color;
+}
+
+.heading-text {
+  color: $heading-color;
+}
+
+.subheading-text {
+  color: $subheading-color;
+}
+
+.section-bg {
+  background-color: $section-blue-bg-color;
 }

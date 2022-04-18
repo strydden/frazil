@@ -84,19 +84,19 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 0;
+  cursor: pointer;
 }
 
 .btn-primary {
-  background-color: #1288CA;
-  border-radius: 5px;
+  background-color: #6b79ef;
+  border-radius: 2px;
   height: 40px;
   font-weight: 400;
   font-size: 15px;
   color: #fff;
   border: none;
   background-size: 300% 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 5px 55px;
   moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -142,11 +142,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #1288CA;
+  color: #1288ca;
 }
 
 a:hover {
-  color: #1E3463;
+  color: #1e3463;
 }
 
 h1,
@@ -203,9 +203,12 @@ header .logo svg {
   }
 }
 
+.banner-content i {
+  color: #6b79ef;
+}
+
 .banner-content p {
   font-size: 15px;
-  color: #231F20 !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -228,11 +231,11 @@ header .logo svg {
 }
 
 .text-dark {
-  color: #231F20 !important;
+  color: #231f20 !important;
 }
 
 .text-primary {
-  color: #1288CA !important;
+  color: #1288ca !important;
 }
 
 .text-white {
@@ -240,19 +243,19 @@ header .logo svg {
 }
 
 .text-secondary {
-  color: #1E3463 !important;
+  color: #1e3463 !important;
 }
 
 .bg-light-blue {
-  background-color: #1288CA !important;
+  background-color: #1288ca !important;
 }
 
 .bg-blue {
-  background-color: #1288CA !important;
+  background-color: #1288ca !important;
 }
 
 .bg-blue-grey {
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
 .text-theme-gradient {
@@ -265,6 +268,18 @@ header .logo svg {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
+}
+
+.footer-bg {
+  background-color: #f5f8fb;
+}
+
+.footer-text {
+  color: rgba(68, 74, 77, 0.7);
+}
+
+.footer-heading-text {
+  color: #122e45;
 }
 
 .banner-title h1 {
@@ -480,7 +495,7 @@ header .logo svg {
           justify-content: center;
   margin-right: 15px;
   font-size: 15px;
-  color: #1288CA;
+  color: #1288ca;
 }
 
 .client-featars ul li .featars-icon i {
@@ -488,7 +503,7 @@ header .logo svg {
 }
 
 .client-featars ul li p {
-  color: #F9FAFB;
+  color: #f9fafb;
   font-size: 17px;
   letter-spacing: 0.4px;
   line-height: 30px;
@@ -572,7 +587,7 @@ header .logo svg {
 }
 
 .expertise-grid ul li div:hover {
-  border-color: #1288CA;
+  border-color: #6b79ef;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -595,8 +610,8 @@ header .logo svg {
 }
 
 .expertise-grid ul li div span {
-  color: #231F20;
   font-size: 18px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -689,7 +704,7 @@ header .logo svg {
 }
 
 .services-grid ul li a span {
-  color: #231F20;
+  color: #231f20;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 7px;
@@ -703,7 +718,7 @@ header .logo svg {
 
 .services-grid ul li a p {
   font-size: 14px;
-  color: #231F20;
+  color: #231f20;
 }
 
 .choose-us-grid {
@@ -822,7 +837,7 @@ header .logo svg {
 }
 
 .choose-us-grid ul li .box-wrapper .content-wrapper span {
-  color: #1288CA;
+  color: #1288ca;
   font-size: 18px;
   margin-bottom: 10px;
   float: left;
@@ -831,7 +846,7 @@ header .logo svg {
 
 .choose-us-grid ul li .box-wrapper .content-wrapper p {
   font-size: 14px;
-  color: #231F20;
+  color: #231f20;
 }
 
 .choose-us-grid ul li .box-wrapper:hover .choose-icon {
@@ -881,7 +896,7 @@ header .logo svg {
   content: "";
   width: 5px;
   height: 100%;
-  background-color: #1288CA;
+  background-color: #1288ca;
   float: left;
   position: absolute;
   left: 0;
@@ -897,7 +912,7 @@ header .logo svg {
   width: 100%;
   float: left;
   font-size: 16px;
-  color: #231F20;
+  color: #231f20;
 }
 
 .client-review .review-wrapper .client-name-rating {
@@ -917,7 +932,7 @@ header .logo svg {
 
 .client-review .review-wrapper .client-name-rating .name {
   font-weight: bold;
-  color: #231F20;
+  color: #231f20;
   font-size: 18px;
 }
 
@@ -940,7 +955,7 @@ header .logo svg {
 }
 
 .client-review .review-wrapper .client-name-rating .rating label {
-  color: #231F20;
+  color: #231f20;
   opacity: 0.7;
   font-size: 12px;
 }
@@ -969,7 +984,7 @@ header .logo svg {
   background: #ffffff !important;
   -webkit-box-shadow: 0px 4px 60px rgba(41, 44, 124, 0.15);
           box-shadow: 0px 4px 60px rgba(41, 44, 124, 0.15);
-  color: #1288CA !important;
+  color: #1288ca !important;
   border-radius: 50px !important;
   font-size: 18px !important;
 }
@@ -1066,12 +1081,12 @@ header .logo svg {
 }
 
 .how-work-grid ul li .box-wrapper .work-icon i {
-  color: #1288CA;
+  color: #1288ca;
   font-size: 20px;
 }
 
 .how-work-grid ul li .box-wrapper span {
-  color: #231F20;
+  color: #231f20;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 7px;
@@ -1107,7 +1122,6 @@ header .logo svg {
 }
 
 .lg-footer .f-menus h4 {
-  color: #ededed;
   font-size: 15px;
   font-weight: 600;
 }
@@ -1116,10 +1130,6 @@ header .logo svg {
   .lg-footer .f-menus h4 {
     font-size: 17px;
   }
-}
-
-.lg-footer .f-menus p {
-  color: #ededed;
 }
 
 .lg-footer .f-menus ul {
@@ -1238,5 +1248,21 @@ header .logo svg {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.71;
+}
+
+.btn-green-color {
+  background-color: #2dc787;
+}
+
+.heading-text {
+  color: #122e45;
+}
+
+.subheading-text {
+  color: #444a4d;
+}
+
+.section-bg {
+  background-color: #6b79ef;
 }
 /*# sourceMappingURL=style.css.map */
