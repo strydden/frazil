@@ -97,9 +97,9 @@
   border: none;
   background-size: 300% 100%;
   padding: 5px 55px;
-  moz-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -125,9 +125,15 @@
 
 .btn-primary:hover {
   background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-primary {
+    padding: 5px 30px;
+  }
 }
 
 * {
@@ -220,7 +226,7 @@ header .logo svg {
 
 @media screen and (max-width: 767px) {
   .banner-content p {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -500,6 +506,7 @@ header .logo svg {
 
 .client-featars ul li .featars-icon i {
   font-size: 20px;
+  padding: 0.8rem;
 }
 
 .client-featars ul li p {
@@ -1104,6 +1111,18 @@ header .logo svg {
   line-height: 1.71;
 }
 
+.lg-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .lg-footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 .lg-footer .company-details .logo {
   width: 100px;
 }
@@ -1264,13 +1283,5 @@ header .logo svg {
 
 .section-bg {
   background-color: #6b79ef;
-}
-
-.btn-primary:hover {
-  background-color: #2dc787;
-  background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,41 +1,43 @@
 @import "../abstracts/variables";
 
-.btn{
-    box-shadow: none;
-    border: 0;
-    cursor: pointer;
+.btn {
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
 }
-.btn-primary{
-    background-color: $button-blue-color;
-    border-radius: 2px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 15px;
-    color: #fff;
-    border: none;
-    background-size: 300% 100%;
-    padding: 5px 55px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    &.btn-big{
-        height: 50px;
-        padding-left: 20px;
-        padding-right: 20px; 
-        @media screen and(max-width: 991px){
-            height: 45px;
-        }
+.btn-primary {
+  background-color: $button-blue-color;
+  border-radius: 2px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  background-size: 300% 100%;
+  padding: 5px 55px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &.btn-big {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media screen and(max-width: 991px) {
+      height: 45px;
     }
-    &:hover{
-        background-position: 100% 0;
-        moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-    }
+  }
+  &:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  @media screen and(max-width: 768px) {
+    padding: 5px 30px;
+  }
 }
-

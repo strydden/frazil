@@ -78,7 +78,7 @@ header {
       line-height: normal;
     }
     @media screen and(max-width: 767px) {
-      text-align: center;
+      text-align: left;
     }
   }
   .btn-big {
@@ -284,6 +284,7 @@ header {
         color: $primary-color;
         i {
           font-size: 20px;
+          padding: 0.8rem;
         }
       }
       p {
@@ -689,6 +690,12 @@ header {
   }
 }
 .lg-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  @media screen and(max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .company-details {
     .logo {
       svg {
