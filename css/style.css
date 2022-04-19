@@ -124,6 +124,7 @@
 }
 
 .btn-primary:hover {
+  background-color: #2dc787 !important;
   background-position: 100% 0;
   moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
