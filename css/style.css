@@ -116,15 +116,12 @@
   text-decoration: underline;
 }
 
-.hero-section {
-  height: calc(100vh -  80px);
-}
-
 .statistics {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 3rem auto;
+  margin-bottom: 0;
   padding: 1rem;
   border: 1px solid #d1d1d4;
   border-radius: 10px;
@@ -1468,7 +1465,6 @@ header .logo svg {
 .how-we-work,
 .our-expertise,
 .clients-success {
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
