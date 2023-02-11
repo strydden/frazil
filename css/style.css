@@ -80,6 +80,235 @@
 
 /*#28668D*/
 /*#28668D*/
+
+/* Navbar */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* @media only screen and (max-width: 767px) {
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+  }
+} */
+
+.nav-link {
+  font-weight: 500;
+  color: #122e45 !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-links .nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1f1f1f;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-links .nav-link:hover {
+  text-decoration: underline;
+}
+
+.hero-section {
+  height: calc(100vh -  80px);
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem auto;
+  padding: 1rem;
+  border: 1px solid #d1d1d4;
+  border-radius: 10px;
+}
+
+.statistics .stat-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 28%;
+}
+
+.statistics .stat-card .stat-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 600;
+    color: #122e45;
+}
+
+.about-us {
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .statistics {
+    flex-direction: column;
+    width: fit-content !important;
+  }
+
+  .statistics .stat-card {
+    max-width: 100%;
+  }
+
+  .statistics .stat-card .stat-text {
+    max-width: 300px;
+    color: #444a4d;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .statistics {
+    max-width: 90%;
+  }
+
+}
+
+.benefits-list {
+  width: fit-content;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.benefits-list li {
+  color: #444a4d;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.benefits-list li i {
+  color: green;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.benefits-list li p {
+  margin-bottom: 0;
+}
+
+.benefits-list li p strong {
+  font-weight: 600;
+}
+
+.subheading-link {
+  text-decoration: underline;
+  color: #122e45;
+  font-weight: 500;
+}
+
+.subheading-link:hover {
+  color: #444a4d;
+}
+
+.tech-roles {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .tech-roles {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .tech-roles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.tech-role-card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  box-shadow: 0px 4px 60px rgb(41 44 124 / 15%);
+}
+
+.tech-role-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  background:#6b79ef;
+  color: #fff;
+}
+
+.tech-role-header p {
+  font-weight: 500;
+}
+
+.tech-role-content {
+  margin: 0;
+  margin-top: 1rem;
+  color: #444a4d;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.value-row {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.value-card-wrapper {
+  background-color: #fff;
+  border-radius: 15px;
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  max-width: 300px;
+  box-shadow: 0px 4px 60px rgba(41, 44, 124, 0.15);
+}
+
+.value-card {
+  border-left: 8px solid #a1abff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.value-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  color: #122e45
+}
+
+.value-card-header i {
+  font-size: 25px;
+}
+
+.about-us-image {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
 .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -227,7 +456,7 @@ header .logo svg {
 
 @media screen and (max-width: 767px) {
   .banner-content p {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -242,7 +471,7 @@ header .logo svg {
 }
 
 .text-primary {
-  color: #1288ca !important;
+  color: #2dc787 !important;
 }
 
 .text-white {
@@ -290,9 +519,17 @@ header .logo svg {
 }
 
 .banner-title h1 {
-  font-size: 58px;
+  font-size: 40px;
   font-weight: 600;
   padding: 0;
+}
+
+.row-gap-1 {
+  row-gap: 1rem;
+}
+
+.margin {
+  margin-left: 2rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -535,7 +772,7 @@ header .logo svg {
 
 .expertise-grid ul li {
   width: 16%;
-  margin: 2%;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -580,10 +817,9 @@ header .logo svg {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 7px;
-  padding: 20px;
+  padding: 5px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  border: 1px solid #d1d1d4;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -592,12 +828,6 @@ header .logo svg {
   .expertise-grid ul li div {
     padding: 15px;
   }
-}
-
-.expertise-grid ul li div:hover {
-  border-color: #6b79ef;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .expertise-grid ul li div .expertise-icon {
@@ -614,6 +844,10 @@ header .logo svg {
 }
 
 .expertise-grid ul li div .expertise-icon img {
+  width: 100%;
+}
+
+.full-width img {
   width: 100%;
 }
 
@@ -1006,14 +1240,9 @@ header .logo svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -1100,16 +1329,19 @@ header .logo svg {
   margin-bottom: 7px;
 }
 
-@media screen and (max-width: 991px) {
-  .how-work-grid ul li .box-wrapper span {
-    font-size: 16px;
-  }
-}
-
 .how-work-grid ul li .box-wrapper .how-we-work-text {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 991px) {
+  .how-work-grid ul li .box-wrapper span {
+    font-size: 16px;
+  }
+  .how-work-grid ul li .box-wrapper .how-we-work-text {
+    font-size: 14px;
+  }
 }
 
 .lg-footer {
@@ -1280,6 +1512,10 @@ header .logo svg {
 
 .subheading-text {
   color: #444a4d;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .section-bg {
